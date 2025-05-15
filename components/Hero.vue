@@ -137,7 +137,7 @@ watch(currentIndex, async () => {
     });
 
     // Animate current video out
-    gsap.fromTo(currentVideoRef.value,
+    await gsap.fromTo(currentVideoRef.value,
       {
         transformOrigin: 'center center',
         scale: 0,
