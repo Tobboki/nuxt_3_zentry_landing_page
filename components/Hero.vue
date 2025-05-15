@@ -146,7 +146,7 @@ watch(currentIndex, async () => {
       {
         scale: 1.5,
         opacity: 1,
-        duration: 1.5,
+        duration: 1,
         ease: 'power1.inOut',
       }
     );
