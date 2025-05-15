@@ -1,5 +1,5 @@
-<template lang="pug">
-  div 
+<template lang="html">
+  <Hero />
     
 </template>
 
