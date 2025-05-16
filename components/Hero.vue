@@ -45,14 +45,16 @@
         </div>
 
         <h1
+          ref="heroTitleRef"
           class="special-font hero-heading absolute bottom-5 right-5 z-40 text-blue-75"
-        >
-          G<b>a</b>ming
-        </h1>
+          v-html="heroTitles[currentIndex-1]"
+        ></h1>
 
         <div class="absolute top-0 left-0 z-40 size-full">
           <div class="mt-24 px-5 sm:px-10">
-            <h1 class="special-font hero-heading text-blue-100">
+            <h1 
+              class="special-font hero-heading text-blue-100"
+            >
               redfi<b>n</b>e
             </h1>
 
@@ -68,9 +70,10 @@
           </div>
         </div>
     </div>
-    <h1 class="special-font hero-heading absolute bottom-5 right-5 text-black">
-      G<b>A</b>MING
-    </h1>
+    <h1 
+      class="special-font hero-heading absolute bottom-5 right-5 text-black"
+      v-html="heroTitles[currentIndex-1]"
+    ></h1>
   </section>
 </template>
 
@@ -91,6 +94,9 @@ const loadedVideos = ref(0);
 
 const nextVideoRef = ref(null);
 const currentVideoRef = ref(null);
+
+const heroTitleRef = ref(null);
+const heroTitles = ['g<b>a</b>ming', 'ide<b>n</b>tity', 're<b>A</b>lity', 'ag<b>e</b>ntic ai'];
 
 const handleMiniVideoClick = () => {
   if (isAnimating.value) return; // Prevent clicks during animation
@@ -137,7 +143,7 @@ watch(currentIndex, async () => {
     });
 
     // Animate current video out
-    await gsap.fromTo(currentVideoRef.value,
+    gsap.fromTo(currentVideoRef.value,
       {
         transformOrigin: 'center center',
         scale: 0,
@@ -148,6 +154,24 @@ watch(currentIndex, async () => {
         opacity: 1,
         duration: 1,
         ease: 'power1.inOut',
+      }
+    );
+
+    await gsap.fromTo(heroTitleRef.value,
+      {
+        transformOrigin: 'center center',
+        scale: 0.8,
+        skewX: '20deg',
+        opacity: 0,
+        filter: 'blur(10px)',
+      },
+      {
+        scale: 1,
+        skewX: '0deg',
+        opacity: 1,
+        filter: 'blur(0px)',
+        duration: 1,
+        ease: 'power2.out',
       }
     );
 
