@@ -57,7 +57,7 @@
             </h1>
 
             <p class="mb-5 max-w-64 font-robert-regular text-blue-100">
-              Enter the metagame Layer <br> Unleash the Play Economy
+              Enter the meta game Layer <br> Unleash the Play Economy
             </p>
             <Button
               id="watch-trailer"
