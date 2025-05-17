@@ -1,5 +1,6 @@
 <template>
   <main class="relative min-h-screen w-screen overflow-x-hidden">
+    <Navbar />
     <Transition name="page">
       <slot />
     </Transition>

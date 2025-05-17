@@ -66,6 +66,7 @@
               title="Watch Trailer"
               leftIcon="fluent:location-arrow-24-filled"
               containerClass="bg-yellow-300 flex-center gap-2"
+              iconRotation="45deg"
             />
           </div>
         </div>

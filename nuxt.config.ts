@@ -8,5 +8,6 @@ export default defineNuxtConfig({
     '@nuxt/image',
     '@nuxt/test-utils',
     '@nuxt/ui',
+    '@vueuse/nuxt'
   ]
 })
