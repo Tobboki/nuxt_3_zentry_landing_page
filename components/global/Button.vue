@@ -17,7 +17,7 @@
       v-if="rightIcon"
       :name="rightIcon"
       :style="{ transform: `rotate(${props.iconRotation})` }"
-      size="12"
+      size="16"
     />
   </button>
 </template>
@@ -26,7 +26,7 @@
 const props = defineProps({
   id: {
     type: String,
-    required: true,
+    required: false,
   },
   title: {
     type: String,

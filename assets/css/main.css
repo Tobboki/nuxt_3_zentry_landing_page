@@ -127,8 +127,12 @@ body {
     @apply flex flex-col gap-1 text-7xl uppercase leading-[.8] text-white sm:px-32 md:text-[6rem];
   }
 
+  .bento-tilt_1 {
+    @apply relative overflow-hidden rounded-md transition-transform duration-300 ease-out;
+  }
+
   .bento-tilt_2 {
-    @apply relative col-span-1 row-span-1 overflow-hidden rounded-md transition-transform duration-300 ease-out;
+    @apply relative overflow-hidden rounded-md transition-transform duration-300 ease-out;
   }
 
   .bento-title {
@@ -215,15 +219,6 @@ body {
 
   .animated-word b {
     font-feature-settings: "ss01" on;
-  }
-
-  .bento-tilt_1 {
-    position: relative;
-    border: 1px solid hsl(0 0% 100% / 0.2);
-    grid-column: span 2;
-    overflow: hidden;
-    border-radius: 0.375rem;
-    transition: transform 300ms ease-out;
   }
 }
 
