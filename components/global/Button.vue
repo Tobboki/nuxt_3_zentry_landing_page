@@ -48,9 +48,7 @@ const props = defineProps({
     type: String,
     default: '',
   },
-})
-
-const rotationClass = `rotate-[${props.iconRotation}]`;
+});
 </script>
 
 <style>
