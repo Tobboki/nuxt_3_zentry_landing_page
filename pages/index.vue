@@ -2,6 +2,7 @@
   <Hero />
   <About />
   <Features />
+  <Contact />
 </template>
 
 <script lang="ts" setup>

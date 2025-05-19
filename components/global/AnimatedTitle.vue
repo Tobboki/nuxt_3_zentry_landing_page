@@ -8,7 +8,7 @@
       <span
         v-for="(word, idx) in splitLine(line)"
         :key="idx"
-        class="animated-word"
+        :class="['animated-word', textClass]"
         v-html="word"
       />
     </div>
@@ -19,15 +19,24 @@
 import { ref, onMounted, onBeforeUnmount, computed } from 'vue';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
+import { container } from '#build/ui';
 
 gsap.registerPlugin(ScrollTrigger);
 
-interface Props {
-  title: string;
-  containerClass?: string;
-}
-
-const props = defineProps<Props>();
+const props = defineProps({
+  title: {
+    type: String,
+    required: true
+  },
+  containerClass: {
+    type: String,
+    default: ''
+  },
+  textClass: {
+    type: String,
+    default: ''
+  }
+});
 
 const containerRef = ref<HTMLElement | null>(null);
 
