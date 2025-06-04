@@ -4,6 +4,7 @@
     <Transition name="page">
       <slot />
     </Transition>
+    <Footer />
   </main>
 </template>
 
