@@ -75,7 +75,6 @@
 </template>
 
 <script lang="ts" setup>
-import { computed, ref, watch, onMounted, onBeforeUnmount } from 'vue'
 import { useWindowScroll } from '@vueuse/core'
 import gsap from 'gsap'
 

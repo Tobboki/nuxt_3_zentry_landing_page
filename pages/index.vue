@@ -3,6 +3,7 @@
   <About />
   <Features />
   <Contact />
+  <Story />
 </template>
 
 <script lang="ts" setup>
