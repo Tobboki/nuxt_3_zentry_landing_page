@@ -153,6 +153,36 @@ body {
     @apply absolute w-full md:h-dvh h-[50dvh] opacity-100 left-10 top-16 md:left-5 md:top-10 lg:left-[-200px] lg:top-[-50px];
     transform: translate3d(0, 0, 0) rotateX(0) rotateY(0) rotateZ(0) scale(1);
   }
+  .vault-item-header.active {
+    @apply flex text-xl font-semibold text-black;
+  }
+
+  .vault-item-header.active span{
+    @apply normal-case;
+  }
+
+  .vault-item-content {
+    transition: opacity 0.3s ease;
+  }
+
+  .vault-item-content.active {
+    @apply block opacity-100;
+    opacity: 1 !important;
+  }
+
+  .vault-content-scroll-progress-bar {
+    @apply absolute left-0 top-0 w-0.5 bg-black;
+    height: 0%;
+    transition: height 0.4s ease;
+  }
+
+  .vault-content-scroll-track {
+    @apply absolute left-0 top-0 w-0.5 ms-1 h-full bg-gray-300;
+  }
+
+  .vault-symbol-video.active {
+    @apply block;
+  }
 
   .gallery-img-container {
     @apply size-64 overflow-hidden bg-violet-300;

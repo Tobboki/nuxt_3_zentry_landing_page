@@ -2,8 +2,9 @@
   <Hero />
   <About />
   <Features />
-  <Contact />
   <Story />
+  <Vault />
+  <Contact />
 </template>
 
 <script lang="ts" setup>
