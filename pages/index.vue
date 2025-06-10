@@ -4,6 +4,7 @@
   <Features />
   <Story />
   <Vault />
+  <Discover />
   <Contact />
 </template>
 

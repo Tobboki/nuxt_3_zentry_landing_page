@@ -184,6 +184,11 @@ body {
     @apply block;
   }
 
+  .discover-square {
+    @apply inline-block w-[4vw] h-[4vw] rounded-xs bg-black m-[2vw] z-20 bg-cover bg-center bg-no-repeat;
+    background-size: 150%;
+  }
+
   .gallery-img-container {
     @apply size-64 overflow-hidden bg-violet-300;
   }

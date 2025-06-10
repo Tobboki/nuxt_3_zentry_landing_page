@@ -69,7 +69,6 @@
 <script lang="ts" setup>
 import gsap from 'gsap'
 
-const router = useRouter()
 const imgRef = ref<HTMLElement | null>(null)
 const maskRef = ref<HTMLElement | null>(null)
 
